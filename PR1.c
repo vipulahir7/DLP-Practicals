@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 void solve(char * arr, int n){
     if((n < 2 )|| (arr[n-1] != 'b' && arr[n-2] != 'b')){
@@ -18,12 +19,11 @@ void solve(char * arr, int n){
 }
 
 int main(){
-    int n;
-    scanf("%d", &n);
-
-    char arr[n];
-
+    char * arr;
     scanf("%s", arr);
+
+    int n = strlen(arr);
+
     // printf("%s", arr);
 
     solve(arr, n);
