@@ -32,3 +32,11 @@ int main() {
 int yywrap() {
     return 1;
 }
+
+/*
+steps to run this code
+step 1) Install and setup win_flex_bison
+step 2) win_flex -o lex.yy.c file_name.l
+step 3) gcc lex.yy.c -o file_name.exe
+step 4) Get-Content input.c | ./file_name.exe
+*/
